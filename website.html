@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Product List</h1>
+  </header>
+
+  <div class="filter-sort">
+    <label for="category-filter">Filter by Category:</label>
+    <select id="category-filter">
+      <option value="all">All</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+      <option value="books">Books</option>
+    </select>
+    
+    <label for="price-sort">Sort by Price:</label>
+    <select id="price-sort">
+      <option value="asc">Low to High</option>
+      <option value="desc">High to Low</option>
+    </select>
+  </div>
+
+  <div id="product-list" class="product-list">
+    <!-- Product items will be dynamically added here -->
+  </div>
+
+  <div id="pagination" class="pagination">
+    <!-- Pagination links will be dynamically added here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
